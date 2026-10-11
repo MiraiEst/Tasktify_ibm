@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* Tasktify brand colors */
+  --color-primary: #1B8FDF;
+  --color-primary-light: #35ADFF;
+  --color-primary-lighter: #5EC4FF;
+  --color-primary-dark: #0D2B5E;
+  --color-card-bg: #F0F7FF;
+  --color-card-bg-alt: #EBF5FF;
+  --color-gray-text: #6B7280;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
